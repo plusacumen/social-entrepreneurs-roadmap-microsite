@@ -367,7 +367,85 @@ blockquote {
    }*/
 
 
+/* Mobile First Media Queries */
 
+      /* Small devices (landscape phones, 576px and up) */
+      @media (min-width: 576px) {
+        .pa-hero__image {
+            height: 24em;
+        }
+
+        .pa-hero__title-container {
+            margin-top: 6.5em;
+        }
+
+        .pa-hero__title {
+            margin: 1.5em;
+        }
+      } 
+
+      /* Medium devices (tablets, 768px and up) */
+      @media (min-width: 768px) {
+        .pa-hero__image {
+            height: 24em;
+        }
+
+        .pa-hero__title-container {
+            margin-top: 6.5em;
+        }
+
+        .pa-hero__title {
+            margin: 1.5em;
+        }
+      }
+
+      /* Large devices (desktops, 992px and up) */
+      @media (min-width: 992px) {
+        .pa-hero__image {
+            height: 24em;
+        }
+
+        .pa-hero__title-container {
+            margin-top: 2.5em;
+        }
+
+        .pa-hero__title {
+            font-size: 3.5em;
+            margin: 1.5em;
+        }
+       
+      }
+      /* X-Large devices (desktops, 1200px and up) */
+      @media (min-width: 1200px)  {
+        .pa-hero__image {
+            height: 44em;
+        }
+
+        .pa-hero__title-container {
+            margin-top: 6.0em;
+        }
+
+        .pa-hero__title {
+            font-size: 5em;
+            margin: 1.5em;
+        }
+      }
+
+      @media (min-width: 1440px)  {
+        .pa-hero__image {
+            height: 44em;
+        }
+
+        .pa-hero__title-container {
+            margin-top: 5.0em;
+        }
+
+        .pa-hero__title {
+            font-size: 5.5em;
+            margin: 1.5em;
+        }
+      }
+    
        
 
 

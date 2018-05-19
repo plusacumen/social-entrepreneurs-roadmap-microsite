@@ -301,7 +301,8 @@ h4,
 h5,
 h6,
 p,
-blockquote {
+blockquote,
+li {
     font-family: 'Open Sans', sans-serif;
     margin-bottom: 2em;
     line-height: 1.636;
@@ -364,6 +365,16 @@ blockquote::before {
 
 blockquote::after {
     content: close-quote;
+}
+
+li {
+    list-style: none;
+    margin-left: 2em;
+    color: #e75113;
+}
+
+li::before {
+    content: "— ";
 }
 
 /* ==========================================================================

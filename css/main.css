@@ -346,6 +346,26 @@ p {
     margin-bottom: 1.2em;
 }
 
+img {
+    max-width: 100%;
+    margin-bottom: 2em;
+}
+
+blockquote {
+    font-weight: 100;
+    font-size: 2.0em;
+    color: purple;
+    margin-bottom: 1em;
+}
+
+blockquote::before {
+    content: open-quote;
+}
+
+blockquote::after {
+    content: close-quote;
+}
+
 /* ==========================================================================
    02 NAV
    ========================================================================== */
@@ -385,9 +405,6 @@ p {
     }
 
 
-
-
-
 /* ==========================================================================
    04 MAIN CONTENT
    ========================================================================== */
@@ -411,6 +428,36 @@ p {
 
         .pa-introduction__list-button:hover {
             border-left: 1rem solid #e75113;
+        }
+
+    /*04.2 PARALLAX BACKGROUND IMAGES-------*/
+
+    .pa-parallax-one {
+        background: url('../img/Social_Entrepreneur_Climbing_a_Mountain.jpg') no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+        margin:  0;
+        padding: 0;
+        max-width: 100%;
+    }
+
+        .pa-parallax__quote-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: auto 15%;
+            text-align: center;
+            
+        }
+        
+         .pa-parallax__quote-text {
+            color: #fff;
+            font-size: 1.5em;
+            text-transform: uppercase;
+            margin-bottom: 2em;
+            margin-top: 2em;
         }
 
 /* ==========================================================================
@@ -442,7 +489,6 @@ p {
     .section--margin-bottom {
         margin-top: 4em;
     }
-
 
 /* ==========================================================================
    CSS GRID.
@@ -502,7 +548,15 @@ p {
             margin: 1.5em;
         }
 
-              }
+        blockquote {
+            font-size: 2.5em;
+        }
+
+        .pa-parallax__quote-text {
+            font-size: 2.5em;
+        }
+
+    }
 
       /* Large devices (desktops, 992px and up) */
       @media (min-width: 992px) {
@@ -544,6 +598,14 @@ p {
         h2 {
             font-size: 3.5em;
         }
+
+         blockquote {
+            font-size: 3em;
+        }
+
+        .pa-parallax__quote-text {
+            font-size: 3em;
+        }
        
       }
       /* X-Large devices (desktops, 1200px and up) */
@@ -582,6 +644,13 @@ p {
 
         .pa-main-wrapper {
             margin: 5em auto;
+        }
+
+         blockquote {
+            font-size: 3.5em;
+        }
+        .pa-parallax__quote-text {
+            font-size: 3.5em;
         }
       }
     

@@ -307,7 +307,8 @@ h6,
 p,
 blockquote,
 li,
-.pa--li {
+.pa--li,
+.pa-express-lane__button {
     font-family: 'Open Sans', sans-serif;
     margin-bottom: 2em;
     line-height: 1.636;
@@ -381,7 +382,12 @@ blockquote::after {
 
 a {
     text-decoration: none;
+
 }
+
+a:focus {outline:0;}
+
+
 
 .pa-a {
     color: #e75113;
@@ -395,6 +401,42 @@ a {
 /* ==========================================================================
    02 NAV
    ========================================================================== */
+
+ .pa-scroll-to-top {
+    display:none;
+    width:100%;
+    margin:0 auto;
+    position: fixed;
+    top: 0px;
+    left:0px; 
+ }
+     .pa-scroll-to-top__button {
+        position:absolute;
+        top:0px;
+        left:0px;
+        background-color: rgba(105, 35, 111, 0.5);
+        width: 100%;
+        color: #fff;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        margin: 0 0 0 0;
+        transition: 0.5s;
+        -moz-transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s; 
+        font-family: 'Open Sans', sans-serif;      
+     }
+     .pa-scroll-to-top__button:hover {
+        background-color: rgba(105, 35, 111, 0.3);
+        transition: 0.5s;
+        color: #fff;
+        -moz-transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;        
+     }
+    
+    
 
 
 /* ==========================================================================
@@ -492,11 +534,53 @@ a {
             margin-top: 2em;
         }
 
-    .pa-parallax-pitstop-one {
+    .pa-parallax-pitstop-one,
+    .pa-express-lane-wrapper {
         width: 100%;
         background-color: #6d236f;
         border-bottom: .6rem solid #e75113;
     }
+
+        .pa-express-lane__header {
+            text-align: center;
+            color: #fff;
+            font-weight: 100; 
+            font-size: 1.8em;
+            line-height: 1.636;
+            margin-bottom: .5em;
+            padding-top: 1.5em;
+        }
+
+        .pa-express-lane__subheader {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 1em;
+            margin: 1em 1.5em;
+        }
+
+        .pa-express-lane__button-container {
+            display: block;
+            grid-gap: .25em 2em;
+            margin: 2em 15%;
+        }
+
+        .pa-express-lane__button {
+            text-align: center;
+            color: #6d236f; 
+            padding: 1em 1em;
+            border: 2px solid #f4eff5;
+            background: #f4eff5;
+            outline-offset: -10px;
+            cursor: hand;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+        } 
+
+        .pa-express-lane__button:hover {
+            background-color: #6d236f;
+            color: #fff;
+        }
+
 
     .pa--quote-box {
         background-color: #f4eff5;
@@ -539,6 +623,11 @@ a {
             font-weight: 800;
             text-transform: uppercase;
         }
+    .pa-video {
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 3em;
+    }
 
 /* ==========================================================================
    05 FOOTER
@@ -737,6 +826,40 @@ a {
                 border-bottom: 5px solid #6d236f;
                 width: 80%;
             }
+
+        .pa-express-lane__button-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+
+        .pa--b1a {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
+
+        .pa--b1b {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+        }
+        .pa--b1c {
+            grid-column: 3 / 4;
+            grid-row: 1 / 2;
+        }
+        .pa--b1d {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+
+        .pa--b1e {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+        }
+
+        .pa--b1f {
+            grid-column: 3 / 4;
+            grid-row: 2 / 3;
+        }
        
       }
       /* X-Large devices (desktops, 1200px and up) */
@@ -757,6 +880,8 @@ a {
         .pa-main-wrapper {
             margin: 5em 12%;
         }
+
+
       }
 
       @media (min-width: 1440px)  {
@@ -774,7 +899,7 @@ a {
         }
 
         .pa-main-wrapper {
-            margin: 5em auto;
+            margin: 5em 15%;
         }
 
          blockquote {

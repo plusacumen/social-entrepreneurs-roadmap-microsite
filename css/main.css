@@ -465,11 +465,16 @@ a:focus {outline:0;}
 
     .pa-hero__title {
         color: #fff;
-        font-size: 1.6em;
+        font-size: 1em;
         font-weight: 800; 
         text-align: center;
         text-transform: uppercase;
-        margin: .5em 1em;
+        margin: 2.5em 1em 0 1em;
+    }
+
+    .pa-hero__subtitle {
+        font-size: 1em;
+        margin: .5em 1.5em auto 1.5em;
     }
 
 
@@ -713,7 +718,12 @@ a:focus {outline:0;}
         }
 
         .pa-hero__title {
-            margin: 1.5em;
+            margin: 2em 1.5em 0 1.5em;
+        }
+
+        .pa-hero__subtitle {
+            font-size: .8em;
+            margin: .5em 1.5em auto 1.5em;
         }
 
          .pa--text-indent {
@@ -725,7 +735,7 @@ a:focus {outline:0;}
       /* Medium devices (tablets, 768px and up) */
       @media (min-width: 768px) {
         .pa-hero__image {
-            height: 24em;
+            height: 30em;
         }
 
         .pa-hero__title-container {
@@ -733,7 +743,8 @@ a:focus {outline:0;}
         }
 
         .pa-hero__title {
-            margin: 1.5em;
+            font-size: 2em;
+            margin: 2.1em 1.5em auto 1.5em;
         }
 
         blockquote {
@@ -753,7 +764,7 @@ a:focus {outline:0;}
       /* Large devices (desktops, 992px and up) */
       @media (min-width: 992px) {
         .pa-hero__image {
-            height: 24em;
+            height: 34em;
         }
 
         .pa-hero__title-container {
@@ -761,8 +772,8 @@ a:focus {outline:0;}
         }
 
         .pa-hero__title {
-            font-size: 3.5em;
-            margin: 0 1.5em;
+            font-size: 3em;
+            margin: 2.5em 1.5em auto 1.5em;
         }
 
         .pa-main-wrapper {
@@ -873,8 +884,8 @@ a:focus {outline:0;}
         }
 
         .pa-hero__title {
-            font-size: 5em;
-            margin: 1.5em;
+            font-size: 3.5em;
+            margin: 2.5em 1.5em auto 1.5em;
         }
 
         .pa-main-wrapper {
@@ -894,8 +905,8 @@ a:focus {outline:0;}
         }
 
         .pa-hero__title {
-            font-size: 5.2em;
-            margin: 1.5em;
+            font-size: 3.5em;
+            margin: 2.5em 1.5em auto 1.5em;
         }
 
         .pa-main-wrapper {

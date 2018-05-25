@@ -308,7 +308,8 @@ p,
 blockquote,
 li,
 .pa--li,
-.pa-express-lane__button {
+.pa-express-lane__button,
+.pa--li--ul--li {
     font-family: 'Open Sans', sans-serif;
     margin-bottom: 2em;
     line-height: 1.636;
@@ -373,12 +374,19 @@ blockquote::after {
     content: close-quote;
 }
 
-.pa--li {
+.pa--li,
+.pa--li--ul--li {
     list-style: circle;
     margin-left: 4em;
     color: #e75113;
     list-style-position: outside;
 }
+
+    .pa--li--ul--li {
+        margin-left: 6.5em;
+        font-weight: 800;
+        list-style: square;
+    }
 
 a {
     text-decoration: none;
@@ -757,6 +765,11 @@ a:focus {outline:0;}
 
         .pa--quote-box__p {
             font-size: 2em;
+        }
+
+        .pa-hero__subtitle {
+            font-size: 1.4em;
+            margin: .5em 1.5em auto 1.5em;
         }
 
     }
